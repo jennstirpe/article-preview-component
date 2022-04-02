@@ -9,13 +9,13 @@ export const StyledMain = styled.main`
     }
 
 
-    h1 {
+    .article {
         font-size: 1.15rem;
         font-weight: 700;
         color: ${({theme}) => theme.colors.headings};
     }
 
-    p {
+    .desc {
         font-size: .82rem;
         line-height: 1.25rem;
         letter-spacing: .7px;

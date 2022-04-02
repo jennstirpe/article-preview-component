@@ -6,31 +6,34 @@ export const StyledShare = styled.div`
     height: 4.5rem;
     position: absolute;
     bottom: 0;
-    right:0rem;
+    right: 0;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     display: flex;
+    /* display: none; */
     align-items: center;
-    justify-content: center;
     
-    span {
+    .share {
         color: ${({theme}) => theme.colors.span};
-        font-size: .8rem;
+        font-size: .85rem;
         letter-spacing: .25rem;
-        margin-right: .75rem;
+        margin-left: 2rem;
+        margin-right: 1rem;
     }
 
-    div {
-        margin-right: 5rem;
+    .socials-list {
+        width: 8rem;
+        margin-right: 2.5rem;
 
-        a {
-            margin: 0 .5rem;
+    .social {
+           margin: 0 .6rem;
         }
     }
 
-    button {
+    #share-toggle {
         border: none;
         background: none;
+        
 
         svg {
         background-color: ${({theme}) => theme.colors.p};
@@ -43,6 +46,45 @@ export const StyledShare = styled.div`
                 border-color: ${({theme}) => theme.colors.background};
             }
         }
+    }
+
+    @media(min-width: 1440px) {
+        width: 15.5rem;
+        height: 3rem;
+        padding-top: .2rem;
+        bottom: 6.25rem;
+        right: -4.25rem;
+        border-top-left-radius: .75rem;
+        border-top-right-radius: .75rem;
+        border-bottom-left-radius: .75rem;
+        border-bottom-right-radius: .75rem;
+        justify-content: space-evenly;
+
+        &::after {
+            content: "";
+            background-color: ${({theme}) => theme.colors.headings};
+            height: 1rem;
+            width: 1rem;
+            position: absolute;
+            top: 2.7rem;
+            transform: rotate(45deg);
+        }
+
+        .share {
+            font-size: .75rem;
+            margin-right: 0;
+            margin-left: 4rem;
+        }
+
+        .socials-list {
+            display: flex;
+            align-items: center;
+        }
+
+        #share-toggle {
+            display: none;
+        }
+        
     }
     
 

@@ -9,41 +9,61 @@ export const StyledAuthor = styled.div`
         margin-top: 1.25rem;
     }
 
-    img {
+    .author-img {
         height: 3rem;
         border-radius: 50%;
     }
 
-    div {
+    .author-details {
         margin: 0 auto 0 1rem;
     }
 
-    h2 {
+    .author-name {
         font-size: .85rem;
         margin: 0;
         color: ${({theme}) => theme.colors.headings};
     }
 
-    span {
+    .date {
         font-size: .82rem;
         color: ${({theme}) => theme.colors.span};
     }
 
-    button {
+    #toggle-share {
         border: none;
         background: none;
 
-        svg {
-        background-color: ${({theme}) => theme.colors.background};
-        border: 1px solid ${({theme}) => theme.colors.background};
-        padding: .6rem;
-        border-radius: 50%;
+        #toggle-closed {
+            
+            svg {
+                background-color: ${({theme}) => theme.colors.background};
+                border: 1px solid ${({theme}) => theme.colors.background};
+                padding: .6rem;
+                border-radius: 50%;
 
-            &:hover {
-                cursor: pointer;
-                border-color: ${({theme}) => theme.colors.span};
-            }
+                &:hover {
+                    cursor: pointer;
+                    border-color: ${({theme}) => theme.colors.span};
+                }
+             }
         }
+
+        #toggle-opened {
+            display: none;
+            svg {
+                background-color: ${({theme}) => theme.colors.headings};
+                border: 1px solid ${({theme}) => theme.colors.headings};
+                padding: .6rem;
+                border-radius: 50%;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: hsl(214, 17%, 25%);
+                }
+             }
+        }
+
+        
     }
 
     
