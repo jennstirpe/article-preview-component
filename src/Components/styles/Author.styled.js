@@ -29,7 +29,7 @@ export const StyledAuthor = styled.div`
         color: ${({theme}) => theme.colors.span};
     }
 
-    #toggle-share {
+    #toggle-share-options {
         border: none;
         background: none;
 
@@ -49,7 +49,7 @@ export const StyledAuthor = styled.div`
         }
 
         #toggle-opened {
-            display: none;
+
             svg {
                 background-color: ${({theme}) => theme.colors.headings};
                 border: 1px solid ${({theme}) => theme.colors.headings};

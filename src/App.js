@@ -1,8 +1,8 @@
-import {StyledBanner} from "./Components/styles/Banner.styled"
-import Main from "./Components/Main";
-import { StyledContainer } from "./Components/styles/Container.styled";
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./Components/Global";
+import { StyledContainer } from "./Components/styles/Container.styled";
+import {StyledBanner} from "./Components/styles/Banner.styled"
+import Main from "./Components/Main";
 
 
 const theme = {
@@ -13,7 +13,6 @@ const theme = {
     background: "hsl(210, 46%, 95%)"
   },
 }
-
 
 function App() {
   return (

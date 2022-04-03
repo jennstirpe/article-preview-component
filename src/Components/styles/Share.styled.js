@@ -10,13 +10,12 @@ export const StyledShare = styled.div`
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     display: flex;
-    /* display: none; */
     align-items: center;
     
     .share {
         color: ${({theme}) => theme.colors.span};
         font-size: .85rem;
-        letter-spacing: .25rem;
+        letter-spacing: .35rem;
         margin-left: 2rem;
         margin-right: 1rem;
     }
@@ -33,6 +32,7 @@ export const StyledShare = styled.div`
     #share-toggle {
         border: none;
         background: none;
+        padding: 0;
         
 
         svg {
@@ -40,6 +40,7 @@ export const StyledShare = styled.div`
         border: 1px solid ${({theme}) => theme.colors.p};
         padding: .6rem;
         border-radius: 50%;
+        
 
             &:hover {
                 cursor: pointer;
@@ -72,7 +73,8 @@ export const StyledShare = styled.div`
 
         .share {
             font-size: .75rem;
-            margin-right: 0;
+            padding-bottom: .25rem;
+            margin-right: .5rem;
             margin-left: 4rem;
         }
 
