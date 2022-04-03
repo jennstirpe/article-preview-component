@@ -16,7 +16,6 @@ export const StyledBanner = styled.div`
         height: 17rem;
         width: 17rem;
     }
-    
 
     
 `

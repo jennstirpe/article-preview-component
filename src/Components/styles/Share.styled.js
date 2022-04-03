@@ -12,7 +12,7 @@ export const StyledShare = styled.div`
     display: flex;
     align-items: center;
     
-    .share {
+    .share-label {
         color: ${({theme}) => theme.colors.span};
         font-size: .85rem;
         letter-spacing: .35rem;
@@ -22,18 +22,17 @@ export const StyledShare = styled.div`
 
     .socials-list {
         width: 8rem;
-        margin-right: 2.5rem;
+        margin-right: 1.8rem;
 
-    .social {
-           margin: 0 .6rem;
-        }
+        .social {
+            margin: 0 .6rem;
+            }
     }
 
-    #share-toggle {
+    #close-share-options {
         border: none;
         background: none;
         padding: 0;
-        
 
         svg {
         background-color: ${({theme}) => theme.colors.p};
@@ -71,7 +70,7 @@ export const StyledShare = styled.div`
             transform: rotate(45deg);
         }
 
-        .share {
+        .share-label {
             font-size: .75rem;
             padding-bottom: .25rem;
             margin-right: .5rem;
@@ -83,7 +82,7 @@ export const StyledShare = styled.div`
             align-items: center;
         }
 
-        #share-toggle {
+        #close-share-options {
             display: none;
         }
         

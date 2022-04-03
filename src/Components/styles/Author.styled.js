@@ -16,24 +16,26 @@ export const StyledAuthor = styled.div`
 
     .author-details {
         margin: 0 auto 0 1rem;
-    }
 
-    .author-name {
+        .author-name {
         font-size: .85rem;
         margin: 0;
         color: ${({theme}) => theme.colors.headings};
+        }
+
+        .date {
+            font-size: .82rem;
+           color: ${({theme}) => theme.colors.span};
+        }
     }
 
-    .date {
-        font-size: .82rem;
-        color: ${({theme}) => theme.colors.span};
-    }
 
     #toggle-share-options {
         border: none;
         background: none;
 
-        #toggle-closed {
+        #share-options-closed {
+            margin-top: .45rem;
             
             svg {
                 background-color: ${({theme}) => theme.colors.background};
@@ -48,7 +50,7 @@ export const StyledAuthor = styled.div`
              }
         }
 
-        #toggle-opened {
+        #share-options-opened {
 
             svg {
                 background-color: ${({theme}) => theme.colors.headings};
@@ -61,9 +63,7 @@ export const StyledAuthor = styled.div`
                     background-color: hsl(214, 17%, 25%);
                 }
              }
-        }
-
-        
+        }        
     }
 
     
