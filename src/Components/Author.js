@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { StyledAuthor } from "./styles/Author.styled";
 import Share from "./Share";
+import Michelle from "../images/avatar-michelle.jpg";
  
 const Author = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ const Author = () => {
     <>
     
     <StyledAuthor>
-          <img className="author-img" src="../../images/avatar-michelle.jpg" alt="Michelle" />
+          <img className="author-img" src={Michelle} alt="Michelle" />
           <div className="author-details">
             <h2 className="author-name">Michelle Appleton</h2>
             <span className="date">28 Jun 2020</span>
