@@ -35,9 +35,6 @@ export const StyledAuthor = styled.div`
         background: none;
 
         #share-options-closed {
-            margin-top: .45rem;
-            
-            svg {
                 background-color: ${({theme}) => theme.colors.background};
                 border: 1px solid ${({theme}) => theme.colors.background};
                 padding: .6rem;
@@ -47,12 +44,10 @@ export const StyledAuthor = styled.div`
                     cursor: pointer;
                     border-color: ${({theme}) => theme.colors.span};
                 }
-             }
+             
         }
 
         #share-options-opened {
-
-            svg {
                 background-color: ${({theme}) => theme.colors.headings};
                 border: 1px solid ${({theme}) => theme.colors.headings};
                 padding: .6rem;
@@ -62,7 +57,7 @@ export const StyledAuthor = styled.div`
                     cursor: pointer;
                     background-color: hsl(214, 17%, 25%);
                 }
-             }
+             
         }        
     }
 
